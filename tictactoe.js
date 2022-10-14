@@ -1,3 +1,33 @@
+let playerScore = 0
+let computerScore = 0
+
+// Getting the player's choice by clicking a button 
+const buttons = document.querySelectorAll('button');
+buttons.forEach((button) => {
+    button.addEventListener('click', getPlayerChoice)
+})
+
+function getPlayerChoice(button) {
+    console.log(this.id)
+    playerChoice = this.id
+    game(playerChoice)
+}
+
+// This function takes the user's input and plays playRound 5 times. First to 5 points wins
+function game(playerChoice) {
+    // Initialize scores for player and computer
+    result = playRound(playerChoice, getComputerChoice())
+
+    if (result == 1) {
+        playerScore += 1
+    }
+
+    else if (result == -1) {
+        computerScore += 1
+    }
+    console.log("Player Score: " + playerScore + " Computer Score: " + computerScore)
+    winnerCheck()
+}
 
 // A function to randomly select the computer's choice of Rock, Paper, or Scissor
 function getComputerChoice() {
@@ -9,10 +39,6 @@ function getComputerChoice() {
 
 // A function plays one round of the game 
 function playRound(playerSelection, computerSelection) {
-
-    // Converts the player's typed option to capitalize first letter
-    playerSelection = playerSelection.toLowerCase()
-    playerSelection = playerSelection[0].toUpperCase() + playerSelection.slice(1)
 
     // Conditional case where the player will win the round
     if (playerSelection === "Rock" && computerSelection === "Scissor" ||
@@ -33,30 +59,9 @@ function playRound(playerSelection, computerSelection) {
         console.log("You lose! The computer selected " + computerSelection + " and that beats " + playerSelection + "!")
         return -1
     }
+
 }
-
-// This function takes the user's input and plays playRound 5 times. First to 5 points wins
-function game() {
-    // Initialize scores for player and computer
-    playerScore = 0
-    computerScore = 0
-
-    // A loop that runs the game 5 times and calculates score
-    while (playerScore < 5 && computerScore < 5) {
-        let playerChoice = prompt("Please select Rock, Paper, or Scissor!")
-        result = playRound(playerChoice, getComputerChoice())
-
-        if (result == 1) {
-            playerScore += 1
-            console.log("Player Score: " + playerScore + " Computer Score: " + computerScore)
-        }
-        else if (result == -1) {
-            computerScore += 1
-            console.log("Player Score: " + playerScore + " Computer Score: " + computerScore)
-        }
-    }
-
-    // Condtional scenarios that dictate the winner
+function winnerCheck() {
     if (playerScore == 5) {
         console.log("You are the first to 5 points! You Win!")
     }
@@ -65,4 +70,6 @@ function game() {
     }
 }
 
-game()
+
+
+
