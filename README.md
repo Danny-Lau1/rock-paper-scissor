@@ -14,5 +14,5 @@ The first to 5 points wins :boom:
 
 I had a lot fun making this game and I hope you enjoy it!
 
-Play here: Danny-Lau1.github.io/Tic-Tac-Toe
+Play here: https://danny-Lau1.github.io/Tic-Tac-Toe
 
