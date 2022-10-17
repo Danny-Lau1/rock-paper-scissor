@@ -1,0 +1,132 @@
+html {
+    background-image: url(images/golden-yellow-seamless-venetian-plaster-background.jpg);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: chalkduster, markerfelt, sans-serif;
+    color: #2d545e;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+}
+
+.title {
+    font-size: 50px;
+    color: seagreen;
+}
+
+.subheader {
+    display: flex;
+    height: 120px;
+    width: 1200px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    gap: 200px
+}
+
+button {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: seagreen;
+
+}
+
+button:hover {
+    transform: scale(1.2);
+    background-color: white;
+    border-color: aqua;
+    transition: 0.2s;
+}
+
+img {
+    height: 125px;
+    width: 125px
+}
+
+.resultcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    height: 100px;
+    width: 1200px;
+}
+
+.score {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    height: 100px;
+}
+
+.score {
+    height: 200px;
+}
+
+.playerscore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 32px;
+
+    width: 300px;
+    border: 2px solid #2d545e;
+    padding: 10px;
+    box-shadow: 6px 4px #2d545e;
+}
+
+.playerscorenumber {
+    display: flex;
+    padding: 20px;
+}
+
+.computerscorenumber {
+    display: flex;
+    padding: 20px;
+}
+
+.computerscore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 32px;
+    width: 300px;
+    border: 2px solid #2d545e;
+    padding: 10px;
+    box-shadow: 6px 4px #2d545e;
+}
+
+
+.footer {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    gap: 10px;
+    font-size: 32px;
+    width: 100%;
+    color: lightblue;
+    background-color: #df6500;
+}
+
+.footerimage {
+    height: 50px;
+    width: 50px;
+}

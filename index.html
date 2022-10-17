@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Rock, Paper, Scissor</title>
 
 </head>
 
@@ -15,18 +15,44 @@
         <h1 class="title">Rock Paper Scissor</h1>
     </div>
     <div class="subheader">
-        <h2>My computer science said she would give me and "A" if I beat her at rock, paper, and scissors. I'm finishing
-            up an assignment at the moment. Can you play for me?</h2>
+        <h2 class="introduction">My Computer Science professor said she would give me and "A" if I beat her at rock,
+            paper, and scissors. I'm finishing up an assignment at the moment. Can you play for
+            me?</h2>
+
     </div>
+    <h2>First to 5 points win!</h2>
+
     <div class="buttons">
-        <button id="Rock">Rock</button>
-        <button id="Paper">Paper</button>
-        <button id="Scissor">Scissor</button>
+        <button id="Rock"><img src="images/stone.png" alt="a rock"></button>
+        <button id="Paper"><img src="images/paper.png" alt="pieces of paper"></button>
+        <button id="Scissor"><img src="images/scissors.png" alt="a pair of scissors"></button>
+    </div>
+
+    <div class="resultcontainer">
+        <div class="result"> Please help me win!</div>
     </div>
 
 
+    <div class="score">
+        <div class="playerscore">
+            Your Score
+            <div class="playerscorenumber">
+                0
+            </div>
+        </div>
+        <div class="computerscore">
+            Their Score
+            <div class="computerscorenumber">
+                0
+            </div>
+        </div>
+    </div>
 
-
+    <div class="footer">Created By: Danny Lau<a href="https://www.linkedin.com/in/danlau05/"> <img
+                src="images/linkedin.png" class="footerimage" alt="linkedin icon"></a> <a
+            href="https://github.com/Danny-Lau1"> <img src="images/github.png" class="footerimage"
+                alt="github icon"></a>
+    </div>
 
 
     <script src="tictactoe.js" defer></script>
