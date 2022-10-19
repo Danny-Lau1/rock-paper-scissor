@@ -1,6 +1,6 @@
 # Rock Paper Scissor
 
-![screenshot of game]
+![screenshot of game](https://github.com/Danny-Lau1/rock-paper-scissor/blob/main/images/rock-paper-scissor-screenshot.png)
 
 ## Overview
 
