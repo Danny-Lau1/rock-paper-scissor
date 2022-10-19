@@ -1,5 +1,9 @@
 # Rock Paper Scissor
 
+![screenshot of game]
+
+## Overview
+
 Welcome to my version of Rock, Paper and Scissors! :fist: :hand: :v:
 
 This game was created using HTML, CSS, and Javascript.
@@ -14,5 +18,7 @@ The first to 5 points wins :boom:
 
 I had a lot fun making this game and I hope you enjoy it!
 
-Play here: https://danny-Lau1.github.io/rock-paper-scissor
+### Preview
+
+Play Here: https://danny-Lau1.github.io/rock-paper-scissor
 
